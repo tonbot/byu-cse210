@@ -8,6 +8,7 @@ class Hideword : VerseGenerator
     List<int> prevWordHide = new List<int> { };
     private string[] words = { };
     int index;
+    int index2;
     string hiddenSentence;
 
     string verse = "";
@@ -45,8 +46,9 @@ class Hideword : VerseGenerator
         verse = getVerse(verseIndex);
         sentence = getVerseContent(verseIndex);
         words = sentence.Split(' ');
-        Console.Write(verse);
-        Console.Write(sentence);
+        Console.WriteLine(verse + " " + sentence);
+        Console.WriteLine( " ");
+        Console.WriteLine("Please press \"Enter\" to contniue or type \"Quit\" to cancel");
         Console.ReadLine();
         Console.Clear();
     }
@@ -62,8 +64,10 @@ class Hideword : VerseGenerator
         string wordToHide = words[index];
         // Replace the chosen word with asterisks
         hiddenSentence = sentence.Replace(wordToHide, "****");
-        Console.Write(verse);
-        Console.Write(hiddenSentence);
+
+        Console.WriteLine(verse + " " + hiddenSentence);
+        Console.WriteLine(" ");
+        Console.WriteLine("Please press \"Enter\" to contniue or type 'Quit' to cancel");
         command = Console.ReadLine();
         Console.Clear();
         // Wait for user to press Enter key
