@@ -2,6 +2,13 @@
 {
     "version": "0.2.0",
     "configurations": [
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        },
+
+
 
         {
             "name": "Sandbox Project",
@@ -245,6 +252,19 @@
             "program": "${workspaceFolder}/final/Foundation4/bin/Debug/net7.0/Foundation4.dll",
             "args": [],
             "cwd": "${workspaceFolder}/final/Foundation4",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+
+             {
+            "name": "Note-taking App",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-final-Note-taking App",
+            "program": "${workspaceFolder}/final/Note-taking App/bin/Debug/net7.0/Note-taking App.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/final/Note-taking App",
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "stopAtEntry": false

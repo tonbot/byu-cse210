@@ -250,5 +250,18 @@
             "problemMatcher": "$msCompile"
         },
 
+        {
+            "label": "build-final-Note-taking App",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/final/Note-taking App/Note-taking App.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+
     ]
 }

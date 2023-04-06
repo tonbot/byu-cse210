@@ -1,0 +1,4 @@
+[Serializable]
+class SimpleGoal : Goal
+{
+}
